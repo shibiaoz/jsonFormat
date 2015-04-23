@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>title</title>
+</head>
+<body>
+	<textarea id="tx" cols="50" rows="10"></textarea>
+	<button id="btn">格式化</button>
+	<div id="wraper"></div>
+	<script type="text/javascript" src="to_format.js"></script>
+	<script type="text/javascript">
+		var testJson = {
+			"name" : "abcd",
+			"age":"11",
+			"sex":"female"
+		}
+		var oDiv = document.getElementById('wraper');
+		var oArea = document.getElementById('tx');
+		var btn = document.getElementById('btn');
+		btn.addEventListener('click',function  () {
+			var value = oArea.value;
+			oDiv.innerHTML = jsonApp(value);
+		},false)
+		//oDiv.innerHTML =jsonApp(testJson);
+	</script>
+</body>
+</html>
