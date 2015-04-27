@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test json format</title>
+	<style type="text/css">
+		.ObjectBrace{color:#00AA00;font-weight:bold;}
+		.ArrayBrace{color:#0033FF;font-weight:bold;}
+		.PropertyName{color:#CC0000;font-weight:bold;}
+		.String{color:#007777;}
+		.Number{color:#AA00AA;}
+		.Comma{color:#000000;font-weight:bold;}
+	</style>
+</head>
+<body>
+	<div id="test"></div>
+	<hr/>
+	<div id="test2"></div>
+	<script type="text/javascript" src="jsonFormat.js"></script>
+
+	<script type="text/javascript" src="reference_material.js"></script>
+	<script type="text/javascript">
+		document.getElementById('test2').innerHTML = APP.format(testJson);
+	</script>
+</body>
+</html>
